@@ -22,7 +22,7 @@ _Create a site or blog from your GitHub repositories with GitHub Pages._
 
 _Congratulations friend, you've completed this course!_
 
-<img src=https://github.com/rogeregor1/palindromo/tree/main/assets/img/029.jpg>
+assets/img/img029.jpg
 
 Your blog is now live and has been deployed!
 
