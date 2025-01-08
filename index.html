@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Curriculum</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Roger Hurtado">
+  <meta name="copyright" content="rogeregor@palindromo.com">
+  <meta name="keywords" content="header, main(section-aside), footer, 
+    pseudo-class::hover, nth-of-type(even)::first-letter">
+  <meta name="description" content="implementacion de template y pseudo-class">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/rogeregor.ico" rel="icon" type="image/x-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="assets/css/Ejercicio5-11.css">
+ <style>
+  .hero-section {
+  background-image: url('assets/img/developer.jpeg'); /* Ruta a tu imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100vh; /* Altura de la sección */
+  display: flex;
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  --background-color: #fff; /* Cambia el color del texto si es necesario */
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+}
+
+.container-name {
+  position: absolute; /* Permite posicionar el contenido respecto al contenedor */
+  top: 0; /* Mueve el contenido al borde superior */
+  left: 0; /* Mueve el contenido al borde izquierdo */
+  padding: 20px; /* Añade algo de espacio interno alrededor del texto */
+  z-index: 10; /* Asegura que el texto esté por encima del fondo */
+}
+
+.text-imagen {
+  color: #fff; /* Cambia el color del texto si es necesario */
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+  font-family: 'Poppins', sans-serif; /* Aplica la fuente configurada */
+}
+ </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container-fluid">
+      <nav class="navmenu">
+            <a href="#"><span style="font-style: heading-font; font-size: x-large;">Profile</span></a>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resumen</a>
+            <a href="contact.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+<main class="main">
+    <section class="hero-section">
+      <div class="container-name">
+          <div class="text-imagen">
+            <h2>Roger Hurtado</h2>
+            <p>I'm a Professional Developer from San Vicent</p>
+          </div>
+      </div>
+    </section>
+
+    <aside>
+      <div class="aside-container"></div>
+      <nav>
+        <dl>
+          <img src="assets/img/img029.jpg" alt="foto perfil" width="100%">
+          <div class="social-links">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+          <dt><a href="https://youtu.be/x89Gka8ZEWU?si=GEtwnv6CNP3ZtYR7">Musica</a></dt>
+          <dt><a href="https://github.com/rogerhurtado/rogeregor">GitHub</a></dt>
+        </dl>
+      </nav>
+      <h3 class="resume-title"><center>Liderazgo, Voluntariado y otras Aptitudes </center></h3>
+      <div class="resume-item">
+        <span>
+          <b>Idiomas:</b>
+          <ul>
+            <li>Alemán Básico</li>
+            <li>Inglés Medio (A2)</li>
+          </ul>
+        </span>
+        <span>
+          <b>Lenguajes de Programación:</b>
+          <ul>
+            <li>Java</li>
+            <li>C#</li>
+            <li>PHP</li>
+            <li>JS</li>
+          </ul>
+        </span>
+        <span>
+          <b>Lenguajes Electrónicos:</b>
+          <ul>
+            <li>TIA-Portal Siemens</li>
+            <li>Arduino</li>
+            <li>Raspberry ...</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    </aside>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">rogeregor</strong> <span>All Rights
+            Reserved<br></span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="#">PalindromoDeveloperMade</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+
+/* ================================
+   Variables globales
+================================ */
+:root {
+    --default-font: "Roboto", sans-serif;
+    --heading-font: "Raleway", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+
+    /* Colores */
+    --heading-color: #a75ce4;
+    --background-color: #936d9d;
+    --default-color: #444444;
+    --color-primario: #007BFF;
+    --color-primario-hover: #0056b3;
+    --color-eliminar: #e5717d;
+    --color-eliminar-hover: #db3e4e;
+    --color-guardar: #28a745;
+    --color-guardar-hover: #1e7e34;
+    --color-actualizar: hwb(38 2% 0%);
+    --color-actualizar-hover: hsl(42, 94%, 40%);
+    
+    /* Otros */
+    --color-texto: #ffffff;
+    --borde-radio: 5px;
+    --transicion: 0.3s ease;
+}
+  
+/* ================================
+   Estilo Global
+================================ */
+body {
+    padding: 10px;
+    margin: 0;
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-family: var(--default-font);
+}
+
+/* ================================
+   Header
+================================ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornsilk;
+    padding: 10px;
+}
+
+.container-fluid {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.navmenu {
+    align-content: space-between;
+}
+
+.navmenu a {
+    font-family: var(--nav-font);
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--default-color);
+    margin-right: 15px;
+    transition: color var(--transicion);
+}
+
+.navmenu a:hover {
+    color: var(--color-primario-hover);
+}
+
+/* ================================
+   main
+================================ */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+/* ================================
+   Section
+================================ */
+section {
+    flex: 5;
+    padding: 10px 60px;
+    background-color: #f9f9f9;
+    width: 100%;
+    min-height: calc(100vh - 82px);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+section img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* ================================
+   Aside
+================================ */
+aside {
+    flex: 1;
+    background-color: burlywood;
+    padding: 10px;
+}
+.aside-container{
+    overflow: scroll;
+}
+.social-links a {
+    margin-right: 10px;
+    color: var(--default-color);
+}
+aside .social-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ================================
+   Footer
+================================ */
+footer {
+    text-align: center;
+    background-color: cornsilk;
+    padding: 10px;
+}
+
+
+/* ================================
+   Formulario Contacto
+================================ */
+.contenedor {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.form-table {
+    width: 100%;
+    border-spacing: 10px;
+}
+/* Estilos generales de la tabla */
+.tabla th {
+    font-size: 18px;
+    font-family: monospace;
+    background-color: burlywood;
+    padding: 10px;
+}
+
+.tabla td {
+    font-size: 14px;
+    font-family: cursive;
+    border: 1px solid #cdcdcd;
+    text-align: center;
+}
+/* Estilos generales de formulario */
+form.form-registro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.form-control {
+    margin-bottom: 5px;
+}
+
+/* Estilo general para labels */
+label {
+    color: #0692a2;
+    text-align: left;
+    font-style: italic;
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Estilo general para inputs y select */
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid #999898;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo general para botones */
+.btn {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    padding: 8px 15px;
+    border: none;
+    border-radius: var(--borde-radio);
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color var(--transicion);
+}
+
+/* Efecto hover general */
+.btn:hover {
+    background-color: var(--color-primario-hover);
+}
+
+/* ================================
+   Estilos generales otros
+================================ */
+h1,
+h2,
+h3 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+
+/* Estilo general para etiqueta a */
+a {
+    text-decoration: none;
+}
+
+/* Efecto link general */
+a:link {
+    color: blue;
+    /* Color para los enlaces no visitados */
+}
+
+a:visited {
+    color: purple;
+    /* Color para los enlaces visitados */
+}
+
+a:hover {
+    color: red;
+    /* Color al pasar el mouse por encima */
+}
+
+a:active {
+    color: rgb(2, 128, 57);
+    /* Color cuando el enlace está activo (clic) */
+}
+
+/* Estilo general para etiqueta p */
+p {
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium';
+}
+

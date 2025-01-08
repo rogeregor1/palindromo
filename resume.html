@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Curriculum</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Roger Hurtado" />
+    <meta name="copyright" content="rogeregor@palindromo.com" />
+    <meta name="keywords" content="header, main(section-aside), footer, section, aside"/>
+    <meta name="description" content="implementacion layout pseudo-class y pseudo-elements"/>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="assets/img/rogeregor.ico" rel="icon" type="image/x-icon" />
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/Ejercicio5-11.css" />
+    <style>
+      /* Cambiar el tamaño del párrafo al pasar el cursor */
+      p:hover {
+        transform: scale(1.1);
+        /* Aumentar el tamaño al 110% */
+        transition: transform 0.3s ease-in-out;
+        /* Suavizar la animación */
+        text-align: left;
+      }
+
+      /* valores por defecto del párrafo último cuando el mouse pasa sobre el */
+      footer p:hover {
+        transform: none;
+        text-align: center;
+      }
+
+      /* Cambio el estilo de la primera letra en los párrafos pares */
+      p:nth-of-type(2n + 1)::first-letter {
+        font-size: 2em;
+        /* Tamaño grande */
+        font-style: italic;
+        /* Cursiva */
+        color: #0078d4;
+        /* Color opcional para destacar */
+      }
+
+      /* Cambiar el color del tercer párrafo */
+      p:nth-of-type(2) {
+        color: rgb(89, 48, 143);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <nav class="navmenu">
+          <a href="#"
+            ><span style="font-style: heading-font; font-size: x-large"
+              >Profile</span
+            ></a
+          >
+          <a href="index.html">Home</a>
+          <a href="resume.html">Resumen</a>
+          <a href="contact.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="resume-section">
+        <div class="container-section">
+          <h2>Sumario</h2>
+          <span>
+            <b>ROGER HURTADO</b><br />
+            Alicante C.P. 03012<br />
+            Móvil: 665411711<br />
+            Email: rogerhurtado2611@gmail.com
+          </span>
+        </div>
+
+        <div class="container">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Experiencia</h3>
+            <div>
+              <h4>Global Trading Stock</h4>
+              <p>
+                <em
+                  >Reparación de electrodomésticos.<b>
+                    1+ año de experiencia.</b
+                  >
+                  Puesta en marcha y mantenimiento dentro de la Empresa.</em
+                >
+              </p>
+              <ul>
+                <li>Calle el Martillo 19</li>
+                <li>Polígono Industrial de San Vicente</li>
+              </ul>
+              <p></p>
+              <h4>E-Consulting</h4>
+              <p>
+                <em
+                  >Gestión de base de datos.
+                  <b>3+ meses de experiencia.</b> Gestión de Stock y
+                  programación de Inventario.</em
+                >
+              </p>
+              <ul>
+                <li>Calle San Pablo 9</li>
+                <li>Barrio de Carolinas, Alicante</li>
+              </ul>
+            </div>
+
+            <h3>Educación</h3>
+
+            <div class="resume-item">
+              <h4>Título de Bachillerato Homologación</h4>
+              <h5>2019</h5>
+              <p>Instituto <b>Bartolomé Herrera</b>, Lima, Perú.</p>
+              <p>
+                -- Estudios terminados.
+                <span style="font-family: Comic Sans MS, cursive"
+                  >Orientación Ciencias.</span
+                >
+              </p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Estudios de Ingeniería Industrial y de Sistemas</h4>
+              <h5>1988 - 1990</h5>
+              <p>Universidad <b>Federico Villareal</b>, Lima, Perú.</p>
+              <p>-- Estudios no concluidos.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Experto en Electrónica Industrial</h4>
+              <h5>2020-2021</h5>
+              <p><em>Centro San Valero</em>, Zaragoza, España.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Sistemas Informáticos (IFCT0609, UC0492|2023)</h4>
+              <h5>2023</h5>
+              <p><em>Centro FEMPA</em>, Alicante, España.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Autómatas Programables (FFS15/2023/151/2/2)</h4>
+              <h5>2024</h5>
+              <p><em>Centro San Valero</em>, Zaragoza, España.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>
+                Desarrollo de Aplicaciones Web (FPS-DAW, cursando 2024-2025)
+              </h4>
+              <h5>2024 - 2025</h5>
+              <p><em>IST Mare Nostrum</em>, Alicante, España</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <div class="aside-container">
+        <nav>
+          <dl>
+            <img src="assets/img/img029.jpg" alt="foto perfil" width="100%" />
+            <div class="social-links">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+            <dt>
+              <a href="https://youtu.be/x89Gka8ZEWU?si=GEtwnv6CNP3ZtYR7"
+                >Musica</a
+              >
+            </dt>
+            <dt>
+              <a href="https://github.com/rogerhurtado/rogeregor">GitHub</a>
+            </dt>
+          </dl>
+        </nav>
+
+        <h3 class="resume-title">
+          <center>Liderazgo, Voluntariado y otras Aptitudes</center>
+        </h3>
+        <div class="resume-item">
+          <span>
+            <b>Experiencia:</b>
+            <ul>
+              <li>He dirigido carga y descarga de pallets.</li>
+              <li>Organización de almacén.</li>
+            </ul>
+          </span>
+          <span>
+            <b>Disponibilidad:</b>
+            <ul>
+              <li>Mediata.</li>
+            </ul>
+          </span>
+          <span>
+            <b>Idiomas:</b>
+            <ul>
+              <li>Alemán Básico</li>
+              <li>Inglés Medio (A2)</li>
+            </ul>
+          </span>
+          <span>
+            <b>Autoaprendizaje:</b>
+            <ul>
+              <li>Tareas Administrativas</li>
+              <li>Gestión de contabilidad</li>
+            </ul>
+          </span>
+          <span>
+            <b>Lenguajes de Programación:</b>
+            <ul>
+              <li>Java</li>
+              <li>C#</li>
+              <li>PHP</li>
+              <li>JS</li>
+            </ul>
+          </span>
+          <span>
+            <b>Frameworks:</b>
+            <ul>
+              <li>IntelliJ IDE</li>
+              <li>Springboot</li>
+              <li>Visual Studio Code</li>
+              <li>.NET Framework</li>
+              <li>Node.js ...</li>
+            </ul>
+          </span>
+          <span>
+            <b>Lenguajes Electrónicos:</b>
+            <ul>
+              <li>TIA-Portal Siemens</li>
+              <li>Arduino</li>
+              <li>Raspberry ...</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      </aside>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">rogeregor</strong>
+            <span>All Rights Reserved<br /></span>
+          </p>
+        </div>
+        <div class="credits">
+          Designed by <a href="#">PalindromoDeveloperMade</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

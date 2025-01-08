@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Curriculum</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Roger Hurtado">
+  <meta name="copyright" content="rogeregor@palindromo.com">
+  <meta name="keywords" content="header, main(section-aside), footer, 
+    pseudo-class::hover, nth-of-type(even)::first-letter">
+  <meta name="description" content="implementacion de template y pseudo-class">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/rogeregor.ico" rel="icon" type="image/x-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+
+
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="assets/css/Ejercicio5-11.css">
+  <style>
+    .contact-section {
+      background-color: rgb(243, 232, 250);
+    }
+
+    /* Cambiar el color y fondo al pasar el mouse */
+    label:hover {
+      color: rgb(117, 63, 187);
+      /* Color del texto al pasar */
+    }
+
+    input:focus {
+      background-color: rgb(233, 218, 252);
+      border-color: rgb(117, 63, 187);
+      outline: none;
+    }
+
+    .form-botones {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Estilo específico para botón "Actualizar" */
+    .btn-submit {
+      background-color: var(--color-guardar);
+    }
+
+    .btn-submit:hover {
+      background-color: var(--color-guardar-hover);
+      color: rgb(255, 242, 128);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container-fluid">
+      <nav class="navmenu">
+        <a href="#"><span style="font-style: heading-font; font-size: x-large;">Profile</span></a>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resumen</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="contact-section">
+
+      <div class="container-title">
+        <h2>Contacto</h2>
+        <p>Si Necesita más información acerca de mi, puede contactarme a través de:</p>
+      </div>
+
+      <div class="info-item">
+        <i class="bi bi-telephone flex-shrink-0"></i>
+        <div>
+          <h3>Teléfono</h3>
+          <p>665411711</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="bi bi-envelope flex-shrink-0"></i>
+        <div>
+          <h3>Email</h3>
+          <p>rogerhurtado2611@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="bi bi-geo-alt flex-shrink-0"></i>
+        <div>
+          <h3>Dirección</h3>
+          <p>Calle Gasset y Artime Nº29, Alicante, España 03012</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12516.306241056676!2d-0.4785506!3d38.34721!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1732485620733!5m2!1ses!2ses"
+            frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="contenedor">
+        <form action="#" method="post" class="form-registro">
+          <div class="form-table">
+
+            <div class="form-control">
+              <label for="name">Nombres</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-control">
+              <label for="subject">Tema</label>
+              <input type="text" name="subject" id="subject" required>
+            </div>
+
+            <div class="form-control">
+              <label for="message">Mensaje</label>
+              <textarea name="message" rows="5" cols="40" id="message" required></textarea>
+            </div>
+
+            <div class="form-botones">
+              <button type="button" class="btn btn-submit">Enviar</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <aside>
+      <div class="aside-container">
+      <nav>
+        <dl>
+          <img src="assets/img/img029.jpg" alt="foto perfil" width="100%">
+          <div class="social-links">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+          <dt><a href="https://youtu.be/x89Gka8ZEWU?si=GEtwnv6CNP3ZtYR7">Musica</a></dt>
+          <dt><a href="https://github.com/rogerhurtado/rogeregor">GitHub</a></dt>
+        </dl>
+      </nav>
+      <h3 class="resume-title"><center>Liderazgo, Voluntariado y otras Aptitudes </center></h3>
+      <div class="resume-item">
+        <span>
+          <b>Experiencia:</b>
+          <ul>
+            <li>He dirigido carga y descarga de pallets.</li>
+            <li>Organización de almacén.</li>
+          </ul>
+        </span>
+        <span>
+          <b>Disponibilidad:</b>
+          <ul>
+            <li>Mediata.</li>
+          </ul>
+        </span>
+        <span>
+          <b>Idiomas:</b>
+          <ul>
+            <li>Alemán Básico</li>
+            <li>Inglés Medio (A2)</li>
+          </ul>
+        </span>
+        <span>
+          <b>Autoaprendizaje:</b>
+          <ul>
+            <li>Tareas Administrativas</li>
+            <li>Gestión de contabilidad</li>
+          </ul>
+        </span>
+        <span>
+          <b>Lenguajes de Programación:</b>
+          <ul>
+            <li>Java</li>
+            <li>C#</li>
+            <li>PHP</li>
+            <li>JS</li>
+          </ul>
+        </span>
+        <span>
+          <b>Frameworks:</b>
+          <ul>
+            <li>IntelliJ IDE</li>
+            <li>Springboot</li>
+            <li>Visual Studio Code</li>
+            <li>.NET Framework</li>
+            <li>Node.js ...</li>
+          </ul>
+        </span>
+        <span>
+          <b>Lenguajes Electrónicos:</b>
+          <ul>
+            <li>TIA-Portal Siemens</li>
+            <li>Arduino</li>
+            <li>Raspberry ...</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    </aside>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">rogeregor</strong> <span>All Rights
+            Reserved<br></span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="#">PalindromoDeveloperMade</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
