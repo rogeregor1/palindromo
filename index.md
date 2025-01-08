@@ -2,9 +2,7 @@
 title: Bienvenidos a mi Blog Curriculum
 ---
 
-# Curriculum
-
-Meta información:
+Información Personal:
 - **Autor:** Roger Hurtado
 - **Email:** rogeregor@palindromo.com
 - **Descripción:** Implementación de template y pseudo-class
@@ -30,9 +28,7 @@ Meta información:
 ---
 
 ### Información Adicional
-
-#### Imagen de Perfil
-![Foto Perfil](assets/img/img029.jpg)
+- [GitHub](https://github.com/rogerhurtado/rogeregor)
 
 #### Redes Sociales
 - [Twitter](#)
@@ -42,15 +38,10 @@ Meta información:
 
 #### Otros Enlaces
 - [Musica](https://youtu.be/x89Gka8ZEWU?si=GEtwnv6CNP3ZtYR7)
-- [GitHub](https://github.com/rogerhurtado/rogeregor)
-
+  
 ---
 
 ## Liderazgo, Voluntariado y otras Aptitudes
-
-### Idiomas
-- Alemán Básico
-- Inglés Medio (A2)
 
 ### Lenguajes de Programación
 - Java
