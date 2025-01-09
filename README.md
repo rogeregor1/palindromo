@@ -2,14 +2,11 @@
 title: Bienvenidos a mi Blog Curriculum
 ---
 
-Información Personal:
+## Información Personal:
 - **Autor:** Roger Hurtado
-- **Email:** rogeregor@palindromo.com
-- **Descripción:** Implementación de template y pseudo-class
+- **Email:** rogerhurtado2611@gmail.com
 
-## Encabezado
-
-### Navegación
+## Menu
 - [Profile](#)
 - [Home](index.html)
 - [Resumen](resume.html)
@@ -19,8 +16,7 @@ Información Personal:
 
 ## Sección Principal
 
-### Hero Section
-![Hero Background](assets/img/developer.jpeg)
+![roger Background](assets/img/developer.jpeg)
 
 **Roger Hurtado**  
 *I'm a Professional Developer from San Vicent.*
@@ -41,6 +37,10 @@ Información Personal:
   
 ---
 
+## Sección Secundaria
+
+[roger imagen](assets/img/img029.jpg)
+
 ## Liderazgo, Voluntariado y otras Aptitudes
 
 ### Lenguajes de Programación
@@ -50,7 +50,8 @@ Información Personal:
 - JS
 
 ### Lenguajes Electrónicos
-- TIA-Portal Siemens
+- TIA-Step7 (Siemens)
+- LEADER
 - Arduino
 - Raspberry ...
 
