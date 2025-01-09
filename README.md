@@ -6,11 +6,10 @@ title: Bienvenidos a mi Blog Curriculum
 - **Autor:** Roger Hurtado
 - **Email:** rogerhurtado2611@gmail.com
 
+
 ## Menu
-- [Profile](#)
-- [Home](index.html)
-- [Resumen](resume.html)
-- [Contacto](contact.html)
+- [Profile](README#)
+- [Resumen](resume#)
 
 ---
 
