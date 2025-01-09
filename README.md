@@ -9,7 +9,7 @@ title: Bienvenidos a mi Blog Curriculum
 
 ## Menu
 - [Profile](README#)
-- [Resumen](resume#)
+- [Resumen](RESUMEN#)
 
 ---
 
